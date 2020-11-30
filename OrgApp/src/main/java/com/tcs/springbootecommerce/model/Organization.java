@@ -30,10 +30,10 @@ public class Organization {
 //	@OneToMany(fetch = FetchType.LAZY)
 //	@JoinTable(name = "organization_departments", joinColumns = @JoinColumn(name ="organization_id"),
 //	inverseJoinColumns = @JoinColumn(name = "department_id"))
-	private List<Long> departments;
-	
+//	private List<Long> departments;
+//	
 //	@OneToMany(fetch = FetchType.LAZY)
 //	@JoinTable(name = "organization_employees", joinColumns = @JoinColumn(name ="organization_id"),
 //	inverseJoinColumns = @JoinColumn(name = "employee_id"))
-	private List<Long> employees;
+//	private List<Long> employees;
 }
