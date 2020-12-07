@@ -9,13 +9,13 @@ LABEL maintainer="jaimeoby123@gmail.com"
 VOLUME /tmp
 
 # Make  PORT 9010 AVAILABLE TO THE OUTSIDE WORLD 
-EXPOSE 9010
+EXPOSE 9002
 
 # application jar 
-ARG JAR_FILE=target/springbootecommerce-0.0.1-SNAPSHOT.jar
+
 
 # add this jar to the container
-ADD ${JAR_FILE} springbootecommerce.jar
+ADD target/springbootecommerce-0.0.1-SNAPSHOT.jar springbootecommerce.jar
 
 #Run the jar file
 ENTRYPOINT [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","/springbootecommerce.jar" ]
